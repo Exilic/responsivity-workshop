@@ -1,0 +1,27 @@
+img {
+    width: 100%;
+}
+
+@media (min-width: 600px){
+    #container {
+        display: grid;
+        grid-template: repeat(20, 50px) / repeat(16, 68px);
+        gap: 6px;
+    }
+
+    article:nth-child(1) {
+        grid-area: 2 / 1 / 9 / 5;
+    }
+
+    article:nth-child(2) {
+        grid-area: 1 / 8 / 9 / 13;
+    }
+
+    article:nth-child(3) {
+        grid-area: 9 / 5 / 20 / 11;
+    }
+
+    article:nth-child(4) {
+        grid-area: 13 / 12 / 18 / 17;
+    }
+}
